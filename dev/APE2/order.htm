@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+	<!--
+		Au Petit Escargot
+		Final Project
+		
+		Author: Anthony DePaolo
+		Date: 5/11/15
+		
+		Filename:			home.htm
+		Supporting files:	APEstyles.css, APEform.css, logo.jpg, saltedcaramelpie.jpg about.htm, menu.htm, order.htm, contact.htm
+		
+	-->
+	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+		<title>Au Petit Escargot</title>
+	
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/foundation.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+		<link href="css/app.css" rel="stylesheet" type="text/css" />
+		
+		<!-- Abril Fatface font -->
+		<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+		<!--Lobster font-->
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<!--Raleway font-->
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		<header class="row">
+			<div class="large-12 columns">
+				<a href="home.htm"><img class="logo img-responsive center-block" src="img/logo-small.jpg" alt="Au Petit Escargot" /></a>
+			</div>
+		</header>
+		
+		<div class="row">
+		<aside class="large-6 columns" id="about">
+			<h2 class="text-center">Order from our bakery!</h2>
+			<p>
+				Au Petit Escargot is eager to create culinary magic for you and deliver it right to your door!
+			</p>
+			<form id="order" name="order"
+				action="http://www.anthonydepaolo.com/dev/APE2/php/order.php" 
+				method="post">
+			
+				<fieldset id="custInfo">
+					<legend>Customer Information</legend>
+				
+					<label for="custname">Name *</label>
+					<input name="custname" id="custname"
+						placeholder="first and last name"
+						required="required" />
+				
+					<label for="street">Street address</label>
+					<input name="street" id="street" 
+						required="required"/>
+				
+					<label for="city">City</label>
+					<input name="city" id="city" value="Newtown" />
+				
+					<label for="state">State (abbr.)</label>
+					<input name="state" id="state" value="CT" />
+				
+					<label for="zip">Postal code</label>
+					<input name="zip" id="zip" 
+						placeholder="nnnnn (-nnnn)"
+						pattern="^\d{5}(\-\d{4})?$" />
+				
+					<label for="phone">Phone number</label>
+					<input name="phone" id="phone" type="text" 
+						placeholder="(nnn) nnn-nnnn"
+						pattern="^\d{10}$|^(\(\d{3}\)\s*)?d{3}[\s-]?\d{4}$"required="required" />
+				
+					<label for="email">E-mail *</label>
+					<input name="email" id="email" type="email"
+						required="required" />
+						
+					<label for="message">Write your order here with what your want and the quantity of each. We will call to confirm your order. Make sure to let us know about any food allergies or special considerations as well!</label>
+					<textarea name="message" id="message" required="required"></textarea>
+					
+					
+					<p class="text-center">
+						<input class="button radius" type="submit" value="Submit My Order" />
+						<input class="button radius" type="reset" value="Cancel" />
+					</p>
+				
+				</fieldset>
+			</form>
+		
+		</aside>
+		
+		<section class="large-6 columns">
+			<img src="img/saltedcaramelpie.jpg" alt="Salted Caramel Pie" />
+		</section>
+		</div>
+	
+		<div class="row">
+			<nav class="large-12 columns">
+				<ul>
+					<li><a href="about.htm">About</a></li>
+					<li><a href="menu.htm">Menu</a></li>
+					<li><a href="order.htm">Order</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		
+		<footer class="row">
+			<div class="large-12 columns">
+				<ul>
+					<li><a href="https://www.facebook.com/pages/Au-petit-escargot/891620570868721" target="_blank"><img  src="img/fairhead-icons/fc-webicon-facebook-m.png" alt="Facebook" /></a></li>
+					<li><a href="instagram.com" target="_blank"><img src="img/fairhead-icons/fc-webicon-instagram-m.png" alt="Instagram" /></a></li>
+					<li><a href="pinterest.com" target="_blank"><img src="img/fairhead-icons/fc-webicon-pinterest-m.png" alt="Pinterest" /></a></li>
+				</ul>
+			</div>
+		</footer>
+		
+		<!--Foundation Modernizr-->
+		<script src="js/vendor/modernizr.js"></script>
+	</body>
+	
+</html>

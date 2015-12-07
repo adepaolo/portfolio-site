@@ -1,0 +1,146 @@
+/*
+	Au Petit Escargot
+	Final Project
+	
+	Author: 	Anthony DePaolo
+	Date: 		5/11/15
+	
+	Filename: 			APEstyles.css
+	Supporting Files: 	'http://fonts.googleapis.com/css?family=Abril+Fatface'
+	
+*/
+
+/* Body styles */
+body {
+	background: rgba(235, 254, 253, 0.5);
+	font-family: Lobster, 'Abril Fatface', Arial;
+	
+}
+
+
+/* Fix the logo size on the web page */
+.logo {
+	border-radius: 3em;
+	height: auto;
+	margin-bottom: 2em;
+	/*width: auto;*/	
+}
+	
+/* Slider styles */
+#slider .item img{
+    border-radius: 3em;
+	display: block;
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 27%;*/
+}
+
+/* 
+	Horizontal Nav bar styles 
+	Change the link color to orange
+	take away the first bullet
+	hover color is black
+*/
+
+nav.horizontalNav {
+	clear: left;
+	text-align: center;
+	/*width: 20%;*/
+	/*margin-bottom: 3em;*/
+}
+	
+nav.horizontalNav ul {
+	color: rgba(100, 10, 10, 0.8);
+}
+
+nav.horizontalNav ul li{
+	float: left;
+	padding: 15px, 0px;
+	width: 4em;
+}
+
+
+nav.horizontalNav ul li:first-of-type {
+	list-style: none;
+}
+
+nav.horizontalNav ul li a {
+	color: rgb(250, 152, 72);
+	display: block;
+	text-decoration: none;
+}
+
+nav.horizontalNav ul li a:hover {
+	color: rgba(100, 10, 10, 0.8);
+}
+
+/* Section styles */
+section {
+	position: relative;
+	float: left;
+	left: 25%;
+	margin-bottom: 2em;
+}
+
+/* Rounded corners on the images */
+section img {
+	width: 75%;
+	border-radius: 3em;
+}
+
+/* aside styles */
+
+#about{
+	background: white;
+	border-radius: 2em;
+	display: block;
+	float: left;
+	height: 480px;
+	left: 25%;
+	margin: 0px auto;
+	padding: 0px 10px;
+	position: relative;
+	overflow: auto;
+	width: 20%;
+	
+	
+}
+
+/* Orange text for writing */
+#about p {
+	color: rgb(250, 152, 72);
+	font-size: 110%;
+	margin: 0px 15px;
+	
+}
+
+/* Headings change to brown-ish */
+#about h2 {
+	color: rgba(100,10,10, 0.8);
+	line-height: 1.2em;
+	padding: 0px 0px 0px 10px;
+	text-decoration: underline;
+}
+
+/* Change links to a salmon color */
+#about a {
+	color: rgb(255, 100, 100);
+}
+
+/* Style for emphasizing things in the paragraphs */
+#about span.contact {
+	color: rgba(100, 10, 10, 0.8);
+}
+
+/* Footer Styles */
+footer {
+	clear: left;
+	text-align: center;
+}
+
+a img {
+	border: none;
+}
+
+

@@ -1,0 +1,108 @@
+/* Custom CSS for main site */
+
+body{padding-top:50px;}
+
+/*body>.navbar{
+	-webkit-transition:background-color 300ms ease-in;
+	transition:background-color 300ms ease-in;
+}*/
+
+@media (min-width:768px){
+	/*body>.navbar-transparent{background-color:transparent}*/
+	/*body>.navbar-transparent .navbar-nav>.open>a{background-color:transparent!important}*/}
+#home{padding-top:0}
+#home .navbar-brand{padding:13.5px 15px 12.5px}
+#home .navbar-brand>img{display:inline;margin:0 10px;height:100%}
+#banner{min-height:300px;border-bottom:none}
+
+.navbar a {
+	color: #000;
+}
+
+.one {
+	background-color: black;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	min-height: 400px;
+	
+	padding: 9em 0 2em;
+}
+
+.bio {
+	background-color: purple;
+	min-height: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.two {
+	background-color: #A64DA6;
+	min-height: 600px;
+	padding: 10px 0;
+}
+
+.three {
+	background-color: #A64996;
+	min-height: 400px;
+	padding: 10px 0;
+}
+
+.shadow {
+	text-shadow: 1px 1px 0 #fff;
+}
+
+/* Change font color to white */
+.white {
+	color: white;
+}
+
+h1, h2, h3 {
+	font-family: Lobster;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	font-family: Raleway;
+}
+
+/* Used to increase font size of tag line under the H1 heading
+	when on small and xsmall screens */
+p.small {
+	font-size: 1.2em;
+}
+
+.bio a, .bio a:visited {
+	color: #ffff79;
+}
+
+.bio a:hover {
+	color: yellow;
+}
+
+/* For founding the corners more */
+.rounded {
+	border-radius: 3em;
+}
+
+.valign {
+	vertical-align: middle;
+}
+
+.img-smaller {
+	max-height: 330px;
+}
+
+.bonterra-logo {
+	max-width: 300px;
+}
+
+img {
+	padding: 5px;
+}
+
+
+
+
